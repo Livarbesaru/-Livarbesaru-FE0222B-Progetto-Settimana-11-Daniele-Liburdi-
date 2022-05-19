@@ -1,0 +1,16 @@
+<nav class="navbar bg-primary navbar-dark navbar-expand-md pb-2">
+  <div class="container">
+      <a class="navbar-brand d-flex w-50">Ecommerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottone">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse w-100" id="bottone">
+          <ul class="nav navbar-nav w-100 justify-content-end">
+              <li class="nav-item"><a [routerLink]="['/']" class="nav-link">Home</a></li>
+              <li class="nav-item"><a [routerLink]="['/cart']" class="nav-link">Cart <span class="bg-danger text-white rounded-circle">
+                {{numberCount}}</span></a></li>
+            </ul>
+      </div>
+  </div>
+</nav>

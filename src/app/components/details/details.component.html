@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 border border-3 border-dark d-flex p-3 justify-content-center bg bg-warning rounded-left">
+      <img src="{{product.url}}" style="width: 90%;" class="rounded-pill">
+    </div>
+    <div class="col-md-6 border border-3 border-dark rounded-right">
+      <h3>{{product.name}}</h3>
+      <p>{{product.description}}</p>
+      <i>{{product.price}}€</i>
+      <button (click)="addCart(product.id)" class="btn btn-success d-block my-1" [disabled]="offOn">add in the cart</button>
+    </div>
+  </div>
+</div>

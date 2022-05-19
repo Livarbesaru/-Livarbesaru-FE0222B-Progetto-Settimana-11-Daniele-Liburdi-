@@ -1,0 +1,48 @@
+<div class="container-fluid bg-success text-white p-3">
+<div>
+  <label for="choice" class="h1 bold mx-3">Chose type</label>
+    <select name="choice" id="choice" #choice>
+      <option value=""></option>
+      <option value="smartphone">smartphone</option>
+      <option value="car">car</option>
+    </select>
+</div>
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-around p-1 flex-wrap">
+      <div *ngIf="choice.value===''" class="col-md-12 d-flex justify-content-around p-1 flex-wrap">
+        <div class="card m-3 d-flex flex-column flex-shrink-1" style="width: 20%;height: 500px;" *ngFor="let elemento of arrayPhone">
+          <h5 class="card-title text-center text-dark" style="height: 5%;">{{elemento.name}}</h5>
+          <div class="card-body" style="width:auto;height: 50%;">
+            <div style="width:auto;height: 100%;">
+              <img class="card-img-top" style="max-width: auto;height:100%;" src="{{elemento.url}}" alt="Card image cap">
+            </div>
+          </div>
+          <div class="card-footer" style="width:auto;height: 25%;">
+            <i>{{elemento.price}}€</i>
+            <br>
+              <button [routerLink]="['dettails',elemento.id]" class="btn btn-primary">Dettails</button>
+              <button (click)="addCart(elemento.id)" class="btn btn-success d-block my-1" [disabled]="offOn">add in the cart</button>
+          </div>
+        </div>
+      </div>
+     <div *ngIf="choice.value!==''" class="row col-md-12 d-flex justify-content-evenly p-1 flex-wrap text-white rounded">
+        <div *ngFor="let elemento of arrayPhone">
+          <div *ngIf="elemento.type===choice.value" class="card p-5 mx-auto my-3 d-flex col*-auto bg-black" style="width: 30%;height: auto;">
+            <h5 class="card-title text-center" style="height: 5%;">{{elemento.name}}</h5>
+            <div class="card-body" style="width:auto;height: 50%;">
+              <div style="width:auto;height: 100%;">
+                <img class="card-img-top" style="max-width: auto;height:100%;" src="{{elemento.url}}" alt="Card image cap">
+              </div>
+            </div>
+            <div class="card-footer" style="width:auto;height: 25%;">
+              <i>{{elemento.price}}€</i>
+              <br>
+                <button [routerLink]="['dettails',elemento.id]" class="btn btn-primary">Dettails</button>
+                <button (click)="addCart(elemento.id)" class="btn btn-success d-block my-1">add in the cart</button>
+              </div>
+          </div>
+          <div *ngIf="elemento.type!==choice.value" style="position: absolute;"></div>
+        </div>
+     </div>
+    </div>
+</div>

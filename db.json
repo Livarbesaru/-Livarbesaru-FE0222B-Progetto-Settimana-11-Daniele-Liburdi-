@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Phone XL",
+      "price": 799,
+      "description": "Uno dei migliori smartphone in commercio, con schermo ampio",
+      "url": "https://ae01.alicdn.com/kf/HTB1p1eJRFXXXXcmapXXq6xXFXXXN/Original-Vkworld-G1-Giant-4G-Smartphone-Android-5-1-MTK6753-Octa-Core-3GB-RAM-16GB-ROM.jpg",
+      "type":"smartphone"
+    },
+    {
+      "id": 2,
+      "name": "Phone Mini",
+      "price": 699,
+      "description": "Ha un'ottima fotocamera anche se piccolo",
+      "url": "https://th.bing.com/th/id/R.7d3641393f4a9c94636a90a551928ade?rik=aS2br5n8aSD2eQ&riu=http%3a%2f%2fwww.goodgearguide.com.au%2fproducts%2fimage%2f9278%2fangle%2f8%2f1500x1500%2f147816%2f&ehk=zZd4mtNH7EcLS5sVGZKVUomLDzBugcFgx3t9QjJLZTU%3d&risl=&pid=ImgRaw&r=0",
+      "type":"smartphone"
+    },
+    {
+      "id": 3,
+      "name": "Phone Standard",
+      "price": 299,
+      "description": "",
+      "url": "https://img.starcopy.it/wp-content/uploads/2019/03/351ea9ac8ba13925f1207e4c045986c5-400x400.jpg",
+      "type":"smartphone"
+    },
+    {
+      "name": "OnePlus Nord",
+      "price": 500,
+      "description": "Il mio telefono",
+      "id": 4,
+      "url": "https://oasis.opstatics.com/content/dam/oasis/page/2021/ebba/spec/nord2_Green%20Wood.png",
+      "type":"smartphone"
+    },
+    {
+      "name": "Banana Phone",
+      "price": "1999",
+      "description": "The best smartphone on the market, as powerfull as Goku",
+      "url": "https://th.bing.com/th/id/OIP.ffrfcJGjYf4hKxMAUGcU6wHaHa?pid=ImgDet&rs=1",
+      "id": 5,
+      "type":"smartphone"
+    },
+    {
+      "name": "Banana Phone II",
+      "price": "2999",
+      "description": "The best smartphone on the market, as powerfull as Goku",
+      "url": "https://th.bing.com/th/id/OIP.ffrfcJGjYf4hKxMAUGcU6wHaHa?pid=ImgDet&rs=1",
+      "id": 6,
+      "type":"smartphone"
+    },
+    {
+      "name": "Auto Tedesca 4",
+      "price": "12999",
+      "description": "The best german car on the market, as powerfull as vegeta",
+      "url": "https://th.bing.com/th/id/R.4feac06d75346ef048dba3ca8fdc03dc?rik=o2cO1Fm08op0%2bQ&pid=ImgRaw&r=0",
+      "id": 7,
+      "type":"car"
+    },
+    {
+      "name": "Auto Italiana Bianca",
+      "price": "8799",
+      "description": "The best italian can on the market, as powerfull as crilin",
+      "url": "https://cdn.drivek.it/configurator-imgs/cars/it/800/FIAT/500-HYBRID/39231_BERLINA-3-PORTE/fiat-500-hybrid-2020-front-angle-2.jpg",
+      "id": 8,
+      "type":"car"
+    }
+  ],
+  "prices": [
+    {
+      "type": "1-Giorno",
+      "price": 25.99
+    },
+    {
+      "type": "2-Giorni",
+      "price": 9.99
+    },
+    {
+      "type": "5-Giorni",
+      "price": 2.99
+    }
+  ]
+}
